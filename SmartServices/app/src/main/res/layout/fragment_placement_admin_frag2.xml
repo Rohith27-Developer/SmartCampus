@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlacementAdminFrag2">
+
+    <EditText
+        android:id="@+id/editText2company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit"
+        android:hint="Company Description"
+        android:layout_margin="25dp"
+        android:lines="20"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:paddingLeft="10dp"
+        android:inputType="textCapSentences|textMultiLine|textAutoCorrect" >
+    </EditText>
+    <Button
+        android:id="@+id/save_plbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/butsty"
+        android:text="Save"
+        android:textColor="#ecc19c"
+        />
+
+</LinearLayout>

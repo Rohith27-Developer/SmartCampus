@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dash"
+    android:orientation="vertical"
+
+    tools:context=".LibDoneActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check out"
+        android:id="@+id/tv1"
+        android:textSize="@dimen/_22sdp"
+        android:fontFamily="@font/ubuntubold"
+        android:textColor="@color/colorWhite"
+        android:includeFontPadding="false"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll No : 177R1A05B3"
+        android:layout_below="@id/tv1"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/ubuntureg"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/rno"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rno"
+        android:id="@+id/datell"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/datetimebglib"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            android:layout_marginLeft="10dp"
+            android:textColor="#5f5f5f"
+            android:id="@+id/datelib"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/ubuntumedium"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            ></TextView>
+    </LinearLayout>
+    <com.mursaat.extendedtextview.AnimatedGradientTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY BOOKS"
+        app:colors="@array/funny_colors"
+        app:simultaneousColors="4"
+        android:fontFamily="@font/ubuntubold"
+        android:textStyle="bold"
+        app:angle="45"
+        android:id="@+id/mybookstv"
+        android:includeFontPadding="false"
+        android:layout_below="@id/datell"
+        android:letterSpacing="0.1"
+        android:textSize="20dp"
+        app:speed="1000"
+        android:layout_marginTop="25dp"
+        app:maxFPS="30"
+        />
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/mybookstv"
+    android:layout_marginTop="@dimen/_25sdp"
+    android:id="@+id/books"
+    />
+    <com.dx.dxloadingbutton.lib.LoadingButton
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lb_resetAfterFailed="true"
+        app:lb_btnColor="#1e3d59"
+        app:lb_btnRippleColor="#000000"
+        app:lb_btnDisabledColor="#cccccc"
+        android:textColor="@color/noteprimary"
+        app:lb_disabledTextColor="#999999"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:lb_cornerRadius="14dp"
+        app:lb_rippleEnable="true"
+        app:lb_btnText="CONFIRM"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>

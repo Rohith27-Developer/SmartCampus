@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FingerPrint">
+    <RelativeLayout
+        android:id="@+id/headingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/headingLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMART "
+        android:fontFamily="@font/ubuntubold"
+        android:textColor="#ff6e40"
+        android:textSize="30dp" />
+        <TextView
+            android:id="@+id/headingLabel2"
+            android:layout_toRightOf="@id/headingLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAMPUS"
+            android:textColor="#1e3d59"
+            android:fontFamily="@font/ubuntubold"
+            android:textSize="30dp" />
+</RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:id="@+id/animation"
+        app:lottie_loop="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/headingLabel"
+        app:lottie_fileName="lock.json"
+        app:lottie_autoPlay="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fingerprintImagell"
+        android:layout_below="@+id/animation"
+        android:layout_centerHorizontal="true"
+        >
+    <ImageView
+        android:id="@+id/fingerprintImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+
+        android:src="@drawable/fingerprintneutral"
+        />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/paraLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fingerprintImagell"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:text="Place your Finger On the Scanner"
+        android:textAlignment="center" />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".BlankFragment3">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  >
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Orders"
+      android:textSize="40dp"
+      android:layout_margin="15dp"
+      android:textColor="#1e3d59"
+      android:fontFamily="@font/ubuntubold"
+      />
+  <LinearLayout
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="18dp"
+      android:gravity="center"
+      android:id="@+id/prev_button"
+      android:background="@drawable/canteen_admin_prev"
+      android:layout_marginRight="10dp"
+    >
+  <ImageView
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:tint="#1e3d59"
+      android:src="@drawable/prev_orders_icon"
+    />
+  </LinearLayout>
+</RelativeLayout>
+  <SearchView
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/search_layout"
+      android:inputType="textPersonName"
+      android:paddingBottom="10dp"
+      android:paddingLeft="20dp"
+      android:clickable="true"
+      android:paddingRight="20dp"
+      android:paddingTop="10dp"
+      android:textColor="#999999"
+      android:textSize="16sp"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_alignStart="@+id/heading_label"
+      android:layout_below="@+id/heading_label"
+      android:ems="10"
+      android:fontFamily="@font/ubuntubold"
+      app:queryHint="Search here.."
+      android:id="@+id/search_field"
+      />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/canteen_orders_admin_rv"
+    android:layout_marginTop="15dp"
+    />
+</LinearLayout>

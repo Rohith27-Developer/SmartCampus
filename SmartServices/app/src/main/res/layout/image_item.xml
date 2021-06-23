@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardview"
+        android:layout_height="234dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/placebg"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/one"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="start|center">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/cname"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/maintit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dblostimg">
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ellipsize="end"
+                android:ems="20"
+                android:paddingTop="25dp"
+                android:fontFamily="@font/ubuntureg"
+                android:justificationMode="inter_word"
+                android:maxLines="4"
+                android:text="  "
+                android:textColor="@color/text"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textview_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:autoLink="all"
+                android:fontFamily="sans-serif-light"
+                android:text="Link"
+                android:textColor="#551A8B"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/textButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="APPLY"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/placelinkc"
+            android:background="@drawable/xyz"
+
+            android:layout_gravity="bottom"
+            android:layout_marginStart="255dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

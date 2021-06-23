@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.example.smartservices"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    aaptOptions {
+        noCompress "tflite"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
+    implementation "androidx.palette:palette:1.0.0"
+    implementation 'com.rhexgomez.typer:typer-roboto:2.0.0'
+    implementation 'com.google.android.material:material:1.0.0-alpha1'
+    implementation 'androidx.room:room-runtime:2.2.5'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.blikoon:QRCodeScanner:0.1.2'
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+    implementation 'com.github.angads25:toggle:1.1.0'
+    implementation 'com.github.TayfunCesur:Stepper:1.0.2'
+    implementation 'com.github.badoualy:stepper-indicator:1.0.7'
+    //Optional: see how to use the utility.
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'com.github.StevenDXC:DxLoadingButton:2.4'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation 'com.github.florent37:diagonallayout:1.0.9'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    annotationProcessor "androidx.room:room-compiler:2.2.5"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.github.tsuryo:Swipeable-RecyclerView:1.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation "ss.anoop:awesome-textinput-layout:1.0.3"
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.github.devdhar04:MaterialSpinner:v0.1.2'
+    implementation 'com.shreyaspatil:MaterialDialog:2.1'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.+'
+    implementation 'com.muddzdev:styleabletoast:2.0.1'
+    implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'
+    implementation 'com.github.abdularis:circularimageview:1.5'
+    implementation ("com.github.bumptech.glide:glide:4.9.0") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'androidx.annotation:annotation:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation ("com.github.bumptech.glide:glide:4.9.0@aar") {
+        transitive = true
+    }
+    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.1'
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.r0adkll:slidableactivity:2.1.0'
+    implementation 'com.firebaseui:firebase-ui-firestore:6.2.1'
+    implementation 'com.vstechlab.easyfonts:easyfonts:1.0.0'
+    implementation 'com.diegodobelo.expandingview:expanding-view:0.9.4'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.allattentionhere:fabulousfilter:0.0.5'
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+    implementation 'com.github.loicteillard:EasyTabs:0.4'
+    implementation 'com.github.vaibhav1929:android-navigation-bar:1.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'com.github.92tonywills:android-loading-button:0.1.0'
+    implementation 'com.github.Mursaat:AnimatedGradientTextView:v0.0.6'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.takusemba:spotlight:2.0.1'
+    implementation 'com.github.Yalantis:pull-to-make-soup:1.0.2'
+    implementation 'com.github.mohammadatif:Animatoo:master'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.firebase:firebase-firestore:21.4.3'
+    implementation "com.google.android.gms:play-services-location:17.0.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.yarolegovich:lovely-dialog:1.1.1'
+    implementation 'com.github.gifffert:ExpandableTextView:0.1.6'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation 'com.alespero:expandable-cardview:0.8'
+    implementation 'moe.feng:MaterialStepperView:0.2.5'
+    implementation 'com.cuberto:liquid-swipe:1.0.0'
+    implementation 'androidx.core:core:1.3.1'
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+}
+apply plugin: 'com.google.gms.google-services'

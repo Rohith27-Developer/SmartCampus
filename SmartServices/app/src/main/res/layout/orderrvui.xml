@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginBottom="5dp"
+        >
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/noodles"
+        android:id="@+id/itemimg"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noodles X 1"
+        android:textAllCaps="true"
+        android:layout_toRightOf="@id/itemimg"
+        android:layout_marginTop="10dp"
+        android:id="@+id/itemnametext"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/ubuntubold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Number : 1"
+        android:layout_toRightOf="@id/itemimg"
+        android:layout_below="@id/itemnametext"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/orderno"
+        android:textSize="16sp"
+        android:fontFamily="@font/ubuntureg"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/orderno"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/orderno"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/datetimebglib"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Progress"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#018786"
+                android:textSize="16dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:layout_marginTop="2dp"
+                android:paddingTop="2dp"
+                android:padding="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

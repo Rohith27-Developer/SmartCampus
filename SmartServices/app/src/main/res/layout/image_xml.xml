@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:id="@+id/cardview"
+        android:layout_gravity="top"
+        android:focusable="false"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#FFF"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_marginLeft="@dimen/medium"
+        android:layout_marginRight="@dimen/medium"
+        app:cardCornerRadius="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/dateCard"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:paddingTop="@dimen/large"
+                android:paddingBottom="@dimen/large"
+                android:background="@drawable/left_circular_gradient_background3"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/monthTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/dayTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/large"
+                android:elevation="60dp"
+                android:background="#FFFFFF"
+               >
+
+                <TextView
+                    android:id="@+id/maintit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/novar"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="EVENT TITLE"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:paddingRight="@dimen/medium"
+                    android:fontFamily="@font/montserrat_light"
+                    android:ellipsize="end"
+                    android:ems="20"
+                    android:lines="2"
+                    android:textColor="#1e3d59"
+                    android:text="Epic Project I am proud of it proud this is ddggdg"/>
+                <TextView
+                    android:id="@+id/textview_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Link"
+
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

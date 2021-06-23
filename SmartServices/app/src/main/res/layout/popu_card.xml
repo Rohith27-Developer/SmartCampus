@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/carrd"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="2dp"
+        android:minHeight="120dp"
+        app:cardBackgroundColor="@color/cardcolor"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+                <ImageView
+                    android:id="@+id/immage"
+                    android:layout_width="75dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/noodles"
+                    android:layout_centerVertical="true"
+                    android:elevation="13dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/namme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Noodles"
+                android:fontFamily="@font/novar"
+                android:textColor="@color/poptext" />
+           <!-- <com.kikt.view.CustomRatingBar
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:currentStar="3.5"
+                android:id="@+id/rt"
+                app:maxStar="5"
+                android:foregroundTint="@color/black"
+                android:tint="#000"
+                app:minStar="0.5"
+                android:backgroundTint="@color/black"
+                app:starHeight="20dp"
+                app:starWidth="20dp"/>-->
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="1.2"
+                android:isIndicator="true"
+                android:progressTint="#1e3d59"
+                android:clickable="false"
+                android:secondaryProgressTint="#00000000"
+                style="?android:attr/ratingBarStyleSmall"
+                android:stepSize="0.1"
+                android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+         >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ "
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/prrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+   <!-- <ImageView
+        android:id="@+id/immage"
+        android:layout_width="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="48dp"
+        android:layout_height="75dp"
+        android:src="@drawable/noodles"
+        android:layout_centerVertical="true"
+        android:elevation="13dp"/> -->
+
+
+</RelativeLayout>

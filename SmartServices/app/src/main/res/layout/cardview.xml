@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_id"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    cardview:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:elevation="25dp"
+    android:layout_width="175dp"
+    android:layout_height="210dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/book_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="center"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/book_title_id"
+            android:textColor="#2d2d2d"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Title"/>
+        <TextView
+            android:id="@+id/price"
+            android:textColor="#267f6d"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40₹"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

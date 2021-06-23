@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noteprimaryDark"
+    tools:context=".LibraryQR">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mybooks"
+    android:text="My Books"
+    android:textSize="@dimen/_20sdp"
+    android:fontFamily="@font/ubuntubold"
+    android:layout_marginTop="@dimen/_15sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="10dp"
+    android:textColor="@color/eventstext"
+    android:visibility="gone"
+    />
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntubold"
+            android:includeFontPadding="true"
+            android:text="Scan QR code"
+            android:textColor="@color/eventstext"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntureg"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="true"
+            android:text="Place qr code inside the frame to scan please avoid shake to get results quickly"
+            android:textColor="#9C9898"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/scan"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_150sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="scan.json"
+            app:lottie_loop="true" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/librecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/layoutQuickAction"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:id="@+id/layoutQuickAction"
+        android:background="@drawable/background_library_qr"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_15sdp"
+        app:layout_constraintCircleRadius="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll1"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/_15sdp"
+            >
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:id="@+id/imageAddNote"
+            android:layout_gravity="center"
+            android:contentDescription="My Notes"
+            android:src="@drawable/ic_bag"
+            app:tint="@color/noteIcons"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY BAG"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/libtext"
+                android:fontFamily="@font/ubuntubold"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/proceed"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_15sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:id="@+id/imageAddNote1"
+                android:layout_gravity="center"
+                android:contentDescription="My Notes"
+                android:src="@drawable/ic_checkout"
+                app:tint="@color/noteIcons"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:textAllCaps="true"
+                android:fontFamily="@font/ubuntubold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:textColor="@color/libtext"
+                />
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/layoutQuickAction"
+        app:layout_constraintTop_toTopOf="@id/layoutQuickAction">
+
+        <ImageView
+            android:id="@+id/qrcodescan"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:background="@drawable/background_add_button"
+            android:contentDescription="Notes App"
+
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/ic_baseline_qr_code_scanner_24"
+            app:tint="@color/noteprimary" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

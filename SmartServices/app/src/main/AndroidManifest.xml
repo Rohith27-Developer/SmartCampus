@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartservices">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".InitApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroActivity"></activity>
+        <activity android:name=".GoogleSignin" />
+        <activity android:name=".ReviewsActivity" />
+        <activity android:name=".PrevOrdersAdmin" />
+        <activity
+            android:name=".Canteen_Admin"
+            android:theme="@style/App_Theme" />
+        <activity
+            android:name=".BusInchargeAdmin"
+            android:theme="@style/AppTheme_4" />
+        <activity android:name=".DriverMapActivity" />
+        <activity android:name=".BusDriverActivity" />
+        <activity
+            android:name=".PlacementsAdmin"
+            android:theme="@style/AppTheme_4" />
+        <activity
+            android:name=".SecurityAdmin"
+            android:theme="@style/AppThemesec" />
+        <activity android:name=".ViewAllPostsActivity"
+            android:theme="@style/AppThemeMat"/>
+        <activity android:name=".ViewAllPostsCleanliness"
+            android:theme="@style/AppThemeMat"/>
+        <activity
+            android:name=".LibraryBag"
+            android:theme="@style/AppTheme6" />
+        <activity
+            android:name=".activities.NotesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoteStyle"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.CreateNoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoteStyle"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LibraryQR"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".LibDoneActivity"
+            android:theme="@style/AppThemeclean1"/>
+        <activity android:name=".LibProceed" />
+        <activity
+            android:name=".BusUpdates"
+            android:theme="@style/App_Theme" />
+        <activity android:name=".TrackActivity" />
+        <activity android:name=".BusContacts" />
+        <activity
+            android:name=".BusTracking"
+            android:theme="@style/Theme.ModernDashbord" />
+        <activity android:name=".ViewPdf" />
+        <activity
+            android:name=".ChatBot"
+            android:theme="@style/App_Theme" />
+        <activity
+            android:name=".Statistics"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LostAndFound"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".InsideGpa"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".Result"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".DashBoard"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".Cleanliness"
+            android:theme="@style/AppThemeMat"/>
+        <activity
+            android:name=".Main3Activity"
+            android:theme="@style/AppThemeclean" />
+        <activity
+            android:name=".EventsActivity2"
+            android:parentActivityName=".EventActivity1"
+            android:theme="@style/AppTheme_4" />
+        <activity
+            android:name=".EventActivity1"
+            android:theme="@style/AppTheme4" />
+        <activity android:name=".Cart1" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+
+        <activity
+            android:name=".MyOrders"
+            android:theme="@style/AppTheme4" />
+        <activity android:name=".ContinueBooking" />
+        <activity
+            android:name=".Second"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme4" />
+        <activity android:name=".Empty" />
+        <activity android:name=".EmptyOrders" />
+        <activity android:name=".CleanImageActivity"
+            android:theme="@style/AppThemeMat"/>
+        <activity
+            android:name=".Events_Admin1"
+            android:parentActivityName=".Events_Admin"
+            android:theme="@style/AppTheme4" />
+        <activity
+            android:name=".Placement2"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".Placement1"
+            android:theme="@style/AppTheme5" />
+        <activity
+            android:name=".AdminActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".Events_Admin"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".MyProfile"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".PopUp"
+            android:theme="@style/AppTheme.customtheme" />
+        <activity android:name=".Account" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/App_Theme" />
+        <activity android:name=".FingerPrint" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.smartservices.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

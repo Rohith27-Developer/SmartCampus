@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7E57C2</color>
+    <color name="colorPrimaryDark">#7E57C2</color>
+    <color name="colorAccent">#1e3d59</color>
+    <color name="color1"> #B9A66C</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="GPABG">#1e3d59</color>
+    <color name="emptycart">#000000</color>
+    <color name="neucolor">#ECF0F3</color>
+    <color name="chatbotbg">#FFFFFF</color>
+    <color name="sel">#1e3d59</color>
+    <color name="nonsel">#4B637A</color>
+    <color name="canteenbg">#FFFFFF</color>
+    <color name="cart">#1e3d59</color>
+    <color name="all">#1e3d59</color>
+    <color name="canteentext">#1e3d59</color>
+    <color name="dash">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="filldet">#FFFFFF</color>
+    <color name="canteeninside">#FFFFFF</color>
+    <color name="carticoncolor">#EDEDED</color>
+    <color name="cardcolor">#FFFFFF</color>
+    <color name="cartgra1">#4B637A</color>
+    <color name="cartgra2">#1e3d59</color>
+    <color name="canteen_text">#7E7A7A</color>
+    <color name="poptext">#383838</color>
+    <color name="number">#7E57C2</color>
+    <color name="admin_color">#3b4d61</color>
+    <color name="buttoncolor">#ecc19c</color>
+    <color name="gradientcolor">#FFFFFF</color>
+    <color name="gradientstartcolor">#d6d6d6</color>
+    <color name="dashname">#1e3d59</color>
+    <color name="myorders">#FFFFFF</color>
+    <color name="bottomsheettrack">#FFFFFF</color>
+    <color name="duo">#3f51b5</color>
+    <color name="textColor">#1e3d59</color>
+    <color name="defaulttext">#808080</color>
+    <color name="background_color_50">#B3FFFFFF</color>
+    <color name="mainactivitycolor1">#373131</color>
+    <color name="eventstext">#000000</color>
+    <color name="placetext">#393E46</color>
+    <color name="Hellotext">#424242</color>
+    <color name="cardsevents">#1e3d59</color>
+    <color name="goodgrey">#535353</color>
+
+    <color name="blue1">#293859</color>
+    <color name="profile1">#E9EAEE</color>
+    <color name="cardsprofile">#FFFFFF</color>
+    <color name="textprofile">#424242</color>
+    <color name="text">#000000</color>
+    <color name="placebg">#FFFFFF</color>
+    <color name="placelinkc">#121212</color>
+    <color name="textcolorevents">#535353</color>
+    <color name="textcolorallposts">#000000</color>
+    <color name="lightgrey">#EEEEEE</color>
+    <color name="separatorColor">#18102C</color>
+    <color name="sky">#03afd0</color>
+    <color name="pink">#FF308E</color>
+    <color name="noti">#FAFAFA</color>
+    <color name="orange">#FA9301</color>
+    <color name="yellow">#F8BA0F</color>
+    <color name="blue">#10455B</color>
+    <color name="st">#1e3d59</color>
+    <color name="purple">#6F26FA</color>
+    <color name="green">#49CC56</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sunflower">#f1c40f</color>
+    <color name="lightred">#ff6c70</color>
+    <color name="lightgreen">#2ECC71</color>
+    <color name="eventsbg">#e6FFFFFF</color>
+    <color name="bstext1">#212121</color>
+    <color name="belize_hole">#2980b9</color>
+    <color name="primary_500">#3F51B5</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#33000000</color>
+    <color name="red">#DC1515</color>
+    <color name="indicator_unselected">#4D000000</color>
+    <color name="status"> #1e3d59</color>
+    //Material SearchBar Light Theme Colors
+    <color name="searchBarIconColor">#3a3a3a</color>
+    //Base
+    <color name="searchBarPrimaryColor">#FFFFFF</color>
+    <color name="searchBarCursorColor">#8000a1ff</color>
+    <color name="searchBarDividerColor">#1F000000</color>
+
+    //Icons
+    <color name="searchBarNavIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarMenuIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarSearchIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarClearIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarBackIconTintColor">@color/searchBarIconColor</color>
+
+    //Text
+    <color name="searchBarTextColor">#DE000000</color>
+    <color name="searchBarHintColor">#42000000</color>
+    <color name="searchBarPlaceholderColor">#8A000000</color>
+    <color name="searchBarTextHighlightColor">#8000a1ff</color>
+
+    //Base
+    <color name="searchBarPrimaryColorDark">#303030</color>
+    <color name="searchBarDividerColorDark">#1FFFFFFF</color>
+
+    //Material SearchBar Dark Theme Colors
+    <color name="searchBarIconColorDark">#00a1ff</color>
+    //Icons
+    <color name="searchBarNavIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarMenuIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarSearchIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarClearIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarBackIconTintColorDark">@color/searchBarIconColorDark</color>
+
+    //Text
+    <color name="searchBarTextColorDark">#DEFFFFFF</color>
+    <color name="searchBarHintColorDark">#42FFFFFF</color>
+    <color name="searchBarPlaceholderColorDark">#8AFFFFFF</color>
+    <color name="searchBarTextHighlightColorDark">#BF00a1ff</color>
+
+    //Notes
+    <color name="colorWhite">#212121</color>
+    <color name="noteprimary">#FFFFFF</color>
+    <color name="noteprimaryDark">#FFFFFF</color>
+    <color name="noteaccent">#1e3d59</color>
+    <color name="noteSearchIcon">#DBDBDB</color>
+    <color name="noteTextHint">#DbDbDb</color>
+    <color name="noteQuickAction">#FAFAFA</color>
+    <color name="noteIcons">#212121</color>
+    <color name="noteTextSubtitle">#333333</color>
+    <color name="colorDefaultNoteColor">#333333</color>
+    <color name="colorDefaultNoteColor1">#FAFAFA</color>
+    <color name="colorNotesubtitletext">#FAFAFA</color>
+    <color name="colorMiscelleanous">#DbDbDb</color>
+    <color name="colorNoteColor2">#FDBE3B</color>
+    <color name="colorNoteColor3">#FF4842</color>
+    <color name="colorNoteColor4">#3A52FC</color>
+    <color name="colorNoteColor5">#000000</color>
+    <color name="colorDelete">#FF4842</color>
+    <color name="colorSearchBackground">#F8F8FF</color>
+    <color name="libtext">#212121</color>
+</resources>

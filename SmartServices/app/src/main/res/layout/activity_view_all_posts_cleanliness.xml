@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ViewAllPostsCleanliness">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Posts"
+        android:textSize="25dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/ubuntubold"
+        android:layout_marginTop="25dp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/clean1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="clean3.json"
+        app:lottie_loop="true"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:layout_gravity="end"
+        android:id="@+id/viewalltext"
+        android:layout_marginRight="25dp"
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW ALL"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/viewall"
+        android:textSize="18sp"
+        android:textColor="@color/all"
+        android:fontFamily="@font/ubuntureg"
+        />
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/cleanrv"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="50dp"
+    />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/stepper_indicator1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        app:stpi_indicatorColor="#1e3d59"
+        app:stpi_circleColor="#1e3d59"
+        app:stpi_lineColor="#1e3d59"
+        app:stpi_lineDoneColor="#1e3d59"
+        app:stpi_labelSize="@dimen/text_size_fab"
+        app:stpi_labels="@array/stepLabels1"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container2"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
+</ScrollView>

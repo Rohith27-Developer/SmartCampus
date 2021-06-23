@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:layout_height="140dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:id="@+id/review_profilepic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntubold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+       android:layout_toRightOf="@id/review_profilepic"
+       android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntumedium"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/review_profilepic"
+            android:layout_below="@id/name"
+            android:id="@+id/review_read"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:gravity="center_vertical"
+        android:background="@drawable/reviews_adapter_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/05/2021 17:44:26"
+            android:fontFamily="@font/ubuntubold"
+            android:id="@+id/datetimetv"
+            android:layout_marginLeft="15dp"
+            android:textColor="#FFFFFF"
+           />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

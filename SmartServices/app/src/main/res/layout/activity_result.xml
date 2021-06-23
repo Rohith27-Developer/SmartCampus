@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsideGpa"
+    android:background="@color/filldet"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/GPABG"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESULT"
+            android:fontFamily="@font/ubuntubold"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/filldet"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/filldet"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="CREDITS"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text="GRADES"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="25dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred1"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra1"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred2"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra2"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred3"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra3"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred4"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra4"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred5"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra5"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred6"
+                    android:layout_width="190dp"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra6"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred7"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra7"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/cred8"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/gra8"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/filldet"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="CGPA : "
+                    android:fontFamily="@font/ubuntumedium"
+                    android:textColor="@color/textColor"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/cgpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/ubuntubold"
+                    android:textColor="@color/textColor"
+                    android:textSize="25dp" />
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/thank"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/thank" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

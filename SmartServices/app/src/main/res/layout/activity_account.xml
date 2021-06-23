@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="450dp">
+
+        <TextView
+            android:id="@+id/Eventstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Start Exploring"
+            android:textColor="#1e3d59"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:fontFamily="@font/ubuntubold" />
+
+        <ImageView
+
+             android:layout_width="wrap_content"
+             android:layout_height="300dp"
+             android:text="Welcome"
+             android:textColor="#1e3d59"
+             android:layout_marginTop="65dp"
+             android:textStyle="bold"
+             android:background="@drawable/campusacct"
+             android:textSize="30dp"
+             android:fontFamily="@font/novar" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/arrow"
+        android:layout_width="60dp"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/arrow_bg"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_gravity="center"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/next"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="500dp"
+
+        android:layout_height="85dp"
+        android:orientation="vertical"
+
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:textColor="#1e3d59"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntureg"
+            android:text="An ultimate solution for your campus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:textColor="#1e3d59"
+            android:fontFamily="@font/ubuntubold"
+            android:text="Click on the arrow "
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
